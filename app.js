@@ -18,7 +18,9 @@ let compScore;
 let drawScore;
 
 // Set userScore & compScore to 0
-if(scores.user && scores.comp && scores.draw) {
+if(scores.user !== undefined &&
+   scores.comp !== undefined &&
+   scores.draw !== undefined) {
   userScore = scores.user;
   compScore = scores.comp;
   drawScore = scores.draw;
