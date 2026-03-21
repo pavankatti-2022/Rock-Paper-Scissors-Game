@@ -1,0 +1,109 @@
+/* Importing Inter font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+
+body {
+  background-color: #304d6d;
+}
+
+.container {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  overflow: hidden;
+}
+
+/* Title */
+.title {
+  color: #82a0bc;
+}
+
+/* Choices */
+.choices {
+  display: flex; align-items: center; justify-content: center;
+  gap: 2.8rem;
+  margin-top: 2rem;
+}
+
+.choices img {
+  max-width: 100px;
+  padding: 10px;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.choices img:active {
+  background-color: #82a0bc;
+}
+
+/* Score Board */
+.score-board {
+  margin-top: 0.8rem;
+  background-color: #82a0bc;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.score-board  .score-container {
+  margin-top: 1rem;
+  display: flex; align-items: center;justify-content: space-between;
+}
+
+.score-board  .score-container .score {
+  text-align: center;
+}
+
+.score-board  .score-container .score p:first-child {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.score-board  .score-container .score p {
+  font-size: 20px;
+}
+
+.score-board  .score-container .score:last-child {
+  border-left: 1px solid #304d6d;
+  padding-left: 1.5rem;
+}
+
+/* Reset Button */
+#reset {
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  border: none; outline: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #82a0bc;
+  color: #bbd8f1;
+  cursor: pointer;
+}
+
+/* Message Container */
+#msg {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 520px) {
+  .container  {
+    width: 95%;
+  }
+
+}
