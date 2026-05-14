@@ -47,7 +47,7 @@ The player competes against the computer, and scores are stored using browser lo
 
 ## Screenshot
 
-Add your project screenshot here.
+![Home Screen](./assets/img/Screenshot.png)
 
 ## Live Demo
 
