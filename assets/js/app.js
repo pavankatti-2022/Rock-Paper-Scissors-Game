@@ -55,11 +55,11 @@ const playGame = (userChoice) => {
     if(userWins) {
 
       scores.user++   // increment User Score      
-      showMessage(`You chose ${userChoice}, Computer chose ${compChoice} hence Computer Wins.`, '#a9607a');
+      showMessage(`You chose ${userChoice}, Computer chose ${compChoice} hence You Win.`, '#155126');
     } else { 
 
       scores.comp++;  // increment Computer score      
-      showMessage(`You chose ${userChoice}, Computer chose ${compChoice} hence You Win.`, '#155126');
+      showMessage(`You chose ${userChoice}, Computer chose ${compChoice} hence Computer Win.`, '#a9607a');
     }
   }
   updateScoreBoard();  // Update on Score Board  
