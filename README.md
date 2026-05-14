@@ -51,7 +51,7 @@ Add your project screenshot here.
 
 ## Live Demo
 
-Add your live demo link here.
+[https://pavankatti-2022.github.io/Rock-Paper-Scissors-Game/]
 
 ## Author
 
