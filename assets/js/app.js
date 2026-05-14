@@ -8,13 +8,8 @@ const scoreBoard = {
   draw: document.querySelector('#draw')
 }
 
-
 // Initialize score from Local Storage or defaults
 let scores = JSON.parse(localStorage.getItem('scores')) || {user: 0, comp: 0, draw: 0};
-
-console.log(scores);
-
-
 
 // Update Score Board
 const updateScoreBoard = () => {
@@ -22,18 +17,15 @@ const updateScoreBoard = () => {
   localStorage.setItem('scores', JSON.stringify(scores));
 }
 
-
 // Show Message Function
 const showMessage = (msg, color = '#fff') => {
   message.innerText = msg;
   message.style.backgroundColor = color;
 }
 
-
 document.addEventListener('DOMContentLoaded', (e) => {
   updateScoreBoard();
 })
-
 
 // Computer Choice
 const genCompChoice = () => {
@@ -41,7 +33,6 @@ const genCompChoice = () => {
   const randomIndex = Math.floor(Math.random() * options.length);
   return options[randomIndex];
 }
-
 
 // Play Game Function
 const playGame = (userChoice) => {
@@ -89,7 +80,6 @@ resetBtn.addEventListener('click', (e) => {
   updateScoreBoard();  
   showMessage(`Play Your Move.`)
 })
-
 
 // Game Starting Point
 choices.forEach((choice) => {  
